@@ -1,2 +1,3 @@
 #!/usr/bin/node
-console.log(`My number: ${process.argv[2]}`);
+const arg = process.argv[2];
+console.log(arg ? `My number: ${Math.floor(arg)}` : 'Not a number');
