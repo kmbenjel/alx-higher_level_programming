@@ -3,10 +3,9 @@
 const Sq = require('./5-square.js');
 
 class Square extends Sq {
-  constructor (size) { super(size); this.size = size; }
   printC (c) {
-    for (let i = 0; i < this.size; i++) {
-      console.log(c.repeat(this.size));
+    for (let i = 0; i < this.height; i++) {
+      console.log(c.repeat(this.width));
     }
   }
 
