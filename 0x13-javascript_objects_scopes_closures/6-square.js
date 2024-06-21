@@ -3,10 +3,7 @@
 const Sq = require('./5-square.js');
 
 class Square extends Sq {
-  constructor (size) {
-    super(size);
-  }
-
+  constructor (size) { super(size); this.size = size; }
   printC () {
     for (let i = 0; i < this.size; i++) {
       console.log('C'.repeat(this.size));
@@ -14,7 +11,7 @@ class Square extends Sq {
   }
 
   charPrint (c) {
-    c ? this.printC() : this.print();
+    if (c) { this.printC(); } else { this.print(); }
   }
 }
 
