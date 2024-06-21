@@ -1,3 +1,4 @@
 #!/usr/bin/node
 
-exports.esrever = function (list) { return list.reverse(); };
+let count = 0;
+exports.logMe = function (item) { count++; console.log(`${count}: ${item}`); };
